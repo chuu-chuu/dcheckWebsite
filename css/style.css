@@ -286,6 +286,7 @@ img.second-bannerImg {
     padding-right: 80px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .contact-data-box {
   height: max-content;
