@@ -41,13 +41,36 @@
                       <a href="#contact" class="uk-scroll" uk-scroll>Contact</a>
                     </li>
                   </ul>
+                  <a href="#side-menu" uk-toggle class="uk-toggle side-menu-toggle uk-hidden@m">
+                    <span uk-icon="menu"></span>
+                  </a>
+                  <div id="side-menu" uk-offcanvas="flip: true; overlay: true; mode: slide">
+                    <div class="uk-offcanvas-bar">
+                
+                        <button class="uk-offcanvas-close" type="button" uk-close></button>
+                        <ul class="sidebar-nav">
+                          <li>
+                            <a href="#home">Home</a>
+                          </li>
+                          <li>
+                            <a href="#about">About</a>
+                          </li>
+                          <li>
+                            <a href="#features">Feature</a>
+                          </li>
+                          <li>
+                            <a href="#contact">Contact</a>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
                 </div>
             </nav>
         </div>
         
         </div>
         <div class="uk-container uk-flex banner" uk-scrollspy="cls: uk-animation-fade; target: .banner-content; delay: 500;">
-          <div class="uk-width-2-4">
+          <div class="uk-width-2-4 uk-width-4-4@s">
             <h1 class="main-title banner-content">
               DAILY GUESTS RECORD <br>
               IN DIGITAL FORMAT
@@ -71,7 +94,7 @@
               </a>
             </div>
           </div>
-          <div class="uk-width-2-4 uk-margin-remove-adjacent">
+          <div class="uk-width-2-4 uk-margin-remove-adjacent banner-right">
             <img src="image/home-mockup.png" alt="bannerImg-1" width="210" class="first-bannerImg banner-content ">
             <img src="image/checkin-mockup.png " alt="bannerImg-2" width="210" class="second-bannerImg banner-content uk-align-right ">
           
@@ -129,7 +152,7 @@
   <div class="uk-container">
     <h2 class="sub-title uk-text-center">Our App Features</h2>
     <div class="feature-wrap uk-flex">
-      <div class="feature-datas" uk-scrollspy="cls: uk-animation-fade; target: .feature-data; delay: 400">
+      <div class="feature-datas hide-in-query" uk-scrollspy="cls: uk-animation-fade; target: .feature-data; delay: 400">
         <div class="feature-data">
           <span>User Identity Verification</span>  
           <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 57.843 57.843">
@@ -152,7 +175,7 @@
       <div class="feature-img" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500">
         <img src="image/splash-black.png" alt="splash" width="260">
       </div>
-      <div class="feature-datas" uk-scrollspy="cls: uk-animation-fade; target: .feature-data; delay: 400">
+      <div class="feature-datas hide-in-query" uk-scrollspy="cls: uk-animation-fade; target: .feature-data; delay: 400">
         <div class="feature-data">
           <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 57.843 57.843">
             <path id="Icon_ionic-ios-checkmark-circle" data-name="Icon ionic-ios-checkmark-circle" d="M32.3,3.375A28.921,28.921,0,1,0,61.218,32.3,28.917,28.917,0,0,0,32.3,3.375ZM47.1,24.3,28.514,42.975H28.5a2.511,2.511,0,0,1-1.613.765,2.434,2.434,0,0,1-1.627-.793l-7.787-7.787a.554.554,0,0,1,0-.793l2.475-2.475a.538.538,0,0,1,.779,0L26.9,38.067,43.865,20.978a.549.549,0,0,1,.389-.167h0a.5.5,0,0,1,.389.167l2.433,2.517A.548.548,0,0,1,47.1,24.3Z" transform="translate(-3.375 -3.375)" fill="#4fc1e9"/>
@@ -172,6 +195,44 @@
           <span>Notification for booking verify user</span>
         </div>
         
+      </div>
+      <div class="feature-datas uk-hidden@m" uk-scrollspy="cls: uk-animation-fade; target: .feature-data; delay: 400">
+        <div class="feature-data">
+          <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 57.843 57.843">
+            <path id="Icon_ionic-ios-checkmark-circle" data-name="Icon ionic-ios-checkmark-circle" d="M32.3,3.375A28.921,28.921,0,1,0,61.218,32.3,28.917,28.917,0,0,0,32.3,3.375ZM47.1,24.3,28.514,42.975H28.5a2.511,2.511,0,0,1-1.613.765,2.434,2.434,0,0,1-1.627-.793l-7.787-7.787a.554.554,0,0,1,0-.793l2.475-2.475a.538.538,0,0,1,.779,0L26.9,38.067,43.865,20.978a.549.549,0,0,1,.389-.167h0a.5.5,0,0,1,.389.167l2.433,2.517A.548.548,0,0,1,47.1,24.3Z" transform="translate(-3.375 -3.375)" fill="#4fc1e9"/>
+          </svg> 
+          <span>User Identity Verification</span> 
+        </div>
+        <div class="feature-data">
+          <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 57.843 57.843">
+            <path id="Icon_ionic-ios-checkmark-circle" data-name="Icon ionic-ios-checkmark-circle" d="M32.3,3.375A28.921,28.921,0,1,0,61.218,32.3,28.917,28.917,0,0,0,32.3,3.375ZM47.1,24.3,28.514,42.975H28.5a2.511,2.511,0,0,1-1.613.765,2.434,2.434,0,0,1-1.627-.793l-7.787-7.787a.554.554,0,0,1,0-.793l2.475-2.475a.538.538,0,0,1,.779,0L26.9,38.067,43.865,20.978a.549.549,0,0,1,.389-.167h0a.5.5,0,0,1,.389.167l2.433,2.517A.548.548,0,0,1,47.1,24.3Z" transform="translate(-3.375 -3.375)" fill="#4fc1e9"/>
+          </svg> 
+          <span>Check-in Scanner</span> 
+        </div>
+        <div class="feature-data">
+          <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 57.843 57.843">
+            <path id="Icon_ionic-ios-checkmark-circle" data-name="Icon ionic-ios-checkmark-circle" d="M32.3,3.375A28.921,28.921,0,1,0,61.218,32.3,28.917,28.917,0,0,0,32.3,3.375ZM47.1,24.3,28.514,42.975H28.5a2.511,2.511,0,0,1-1.613.765,2.434,2.434,0,0,1-1.627-.793l-7.787-7.787a.554.554,0,0,1,0-.793l2.475-2.475a.538.538,0,0,1,.779,0L26.9,38.067,43.865,20.978a.549.549,0,0,1,.389-.167h0a.5.5,0,0,1,.389.167l2.433,2.517A.548.548,0,0,1,47.1,24.3Z" transform="translate(-3.375 -3.375)" fill="#4fc1e9"/>
+          </svg> 
+          <span>Process booking with followers</span> 
+        </div>
+        <div class="feature-data">
+          <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 57.843 57.843">
+            <path id="Icon_ionic-ios-checkmark-circle" data-name="Icon ionic-ios-checkmark-circle" d="M32.3,3.375A28.921,28.921,0,1,0,61.218,32.3,28.917,28.917,0,0,0,32.3,3.375ZM47.1,24.3,28.514,42.975H28.5a2.511,2.511,0,0,1-1.613.765,2.434,2.434,0,0,1-1.627-.793l-7.787-7.787a.554.554,0,0,1,0-.793l2.475-2.475a.538.538,0,0,1,.779,0L26.9,38.067,43.865,20.978a.549.549,0,0,1,.389-.167h0a.5.5,0,0,1,.389.167l2.433,2.517A.548.548,0,0,1,47.1,24.3Z" transform="translate(-3.375 -3.375)" fill="#4fc1e9"/>
+          </svg> 
+          <span>Listen Booking confirm by e-mail</span> 
+        </div>
+        <div class="feature-data">
+          <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 57.843 57.843">
+            <path id="Icon_ionic-ios-checkmark-circle" data-name="Icon ionic-ios-checkmark-circle" d="M32.3,3.375A28.921,28.921,0,1,0,61.218,32.3,28.917,28.917,0,0,0,32.3,3.375ZM47.1,24.3,28.514,42.975H28.5a2.511,2.511,0,0,1-1.613.765,2.434,2.434,0,0,1-1.627-.793l-7.787-7.787a.554.554,0,0,1,0-.793l2.475-2.475a.538.538,0,0,1,.779,0L26.9,38.067,43.865,20.978a.549.549,0,0,1,.389-.167h0a.5.5,0,0,1,.389.167l2.433,2.517A.548.548,0,0,1,47.1,24.3Z" transform="translate(-3.375 -3.375)" fill="#4fc1e9"/>
+          </svg>
+          <span>User Friendly Registration</span> 
+        </div>
+        <div class="feature-data">
+          <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 57.843 57.843">
+            <path id="Icon_ionic-ios-checkmark-circle" data-name="Icon ionic-ios-checkmark-circle" d="M32.3,3.375A28.921,28.921,0,1,0,61.218,32.3,28.917,28.917,0,0,0,32.3,3.375ZM47.1,24.3,28.514,42.975H28.5a2.511,2.511,0,0,1-1.613.765,2.434,2.434,0,0,1-1.627-.793l-7.787-7.787a.554.554,0,0,1,0-.793l2.475-2.475a.538.538,0,0,1,.779,0L26.9,38.067,43.865,20.978a.549.549,0,0,1,.389-.167h0a.5.5,0,0,1,.389.167l2.433,2.517A.548.548,0,0,1,47.1,24.3Z" transform="translate(-3.375 -3.375)" fill="#4fc1e9"/>
+          </svg> 
+          <span> Notification for booking verify user</span> 
+        </div>
       </div>
     </div>
   </div>
@@ -217,24 +278,25 @@
     </a>
     <div class="uk-container">
     <div class="uk-text-center uk-flex  uk-flex-center">
-      <ul class="uk-navbar-nav uk-visible@m">
+      <ul class="uk-navbar-nav">
         <li class="">
           <a href="#">About</a>
         </li>
         <li>
-          <a href="#">Privacy Policy</a>
-        </li>
-        <li>
-          <a href="#">Terms and Condition</a>
-        </li>
-        <li>
           <a href="#">Contact</a>
+        </li>
+        <li>
+          <a href="privacy-policy.html">Privacy Policy</a>
+        </li>
+        
+        <li>
+          <a href="tearms-of-service.html">Terms and Condition</a>
         </li>
       </ul>
     </div>
     <div class="footer-bottom uk-flex uk-flex-between">
       <div class="copyright">
-        Copyright © 2022. d-Check, Myanmar | All Rights Reserved.
+        Copyright © 2022.<br> d-Check, Myanmar | All Rights Reserved.
       </div>
       <div class="footer-social">
         <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
